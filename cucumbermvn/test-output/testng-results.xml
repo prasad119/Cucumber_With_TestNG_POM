@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="32064" started-at="2019-06-13T11:55:58Z" finished-at="2019-06-13T11:56:30Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="32064" started-at="2019-06-13T11:55:58Z" finished-at="2019-06-13T11:56:30Z">
+      <class name="org.cucumber.util.Runner">
+        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:org.cucumber.util.Runner@13deb50e]" name="setUP" is-config="true" duration-ms="217" started-at="2019-06-13T17:25:58Z" finished-at="2019-06-13T17:25:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="runFeatures(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.cucumber.util.Runner@13deb50e]" name="runFeatures" duration-ms="31743" started-at="2019-06-13T17:25:58Z" data-provider="features" finished-at="2019-06-13T17:26:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login verification check]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runFeatures -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.cucumber.util.Runner@13deb50e]" name="tearDown" is-config="true" duration-ms="38" started-at="2019-06-13T17:26:30Z" finished-at="2019-06-13T17:26:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.cucumber.util.Runner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
