@@ -1,0 +1,15 @@
+
+{
+	"TestClass1_test": {
+		"userName": "Admin",
+		"passWord": "admin123"
+	},
+	"TestClass2_test1": {
+		"userName": "Admin",
+		"passWord": "admin123"
+	},
+	"TestClass2_test2": {
+		"userName": "Admin",
+		"passWord": "admin123"
+	}
+}

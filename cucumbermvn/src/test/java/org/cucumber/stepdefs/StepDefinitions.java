@@ -3,9 +3,8 @@ package org.cucumber.stepdefs;
 
 import org.cucumber.util.Configuration;
 import org.cucumber.util.Hooks;
+
 import com.cucumber.pageobjects.LoginPage;
-import org.openqa.selenium.By;
-import org.testng.Assert;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -16,16 +15,17 @@ public class StepDefinitions
 {
 	LoginPage objLogin = new LoginPage();
 	
-	@Given("^user launch and enter the \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void login_to_application(String userName,String passWord) throws Throwable {
+	
+	@Given("^user login to application with \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void login_to_application(String username,String password) throws Throwable {
 		objLogin.launch_app();
-		objLogin.enter_username(userName);
-		objLogin.enter_password(passWord);	  
+		objLogin.enter_username(Hooks.data.get(username));
+		objLogin.enter_password(Hooks.data.get(password));	  
 	}
 
-	@When("^user select location \"([^\"]*)\" and do login$")
+	@When("^user select \"([^\"]*)\" and do login$")
 	public void select_location(String location) throws Throwable {
-		objLogin.select_location(location);
+		objLogin.select_location(Hooks.data.get(location));
 		objLogin.click_onlogin();
 	}
 

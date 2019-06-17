@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="32064" started-at="2019-06-13T11:55:58Z" finished-at="2019-06-13T11:56:30Z">
+  <suite name="Suite" duration-ms="14726" started-at="2019-06-17T11:17:59Z" finished-at="2019-06-17T11:18:14Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="32064" started-at="2019-06-13T11:55:58Z" finished-at="2019-06-13T11:56:30Z">
+    <test name="Test" duration-ms="14726" started-at="2019-06-17T11:17:59Z" finished-at="2019-06-17T11:18:14Z">
       <class name="org.cucumber.util.Runner">
-        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:org.cucumber.util.Runner@13deb50e]" name="setUP" is-config="true" duration-ms="217" started-at="2019-06-13T17:25:58Z" finished-at="2019-06-13T17:25:58Z">
+        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:org.cucumber.util.Runner@59ec2012]" name="setUP" is-config="true" duration-ms="330" started-at="2019-06-17T16:47:59Z" finished-at="2019-06-17T16:47:59Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="runFeatures(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.cucumber.util.Runner@13deb50e]" name="runFeatures" duration-ms="31743" started-at="2019-06-13T17:25:58Z" data-provider="features" finished-at="2019-06-13T17:26:30Z">
+        <test-method status="PASS" signature="runFeatures(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.cucumber.util.Runner@59ec2012]" name="runFeatures" duration-ms="14281" started-at="2019-06-17T16:47:59Z" data-provider="features" finished-at="2019-06-17T16:48:14Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runFeatures -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.cucumber.util.Runner@13deb50e]" name="tearDown" is-config="true" duration-ms="38" started-at="2019-06-13T17:26:30Z" finished-at="2019-06-13T17:26:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.cucumber.util.Runner@59ec2012]" name="tearDown" is-config="true" duration-ms="31" started-at="2019-06-17T16:48:14Z" finished-at="2019-06-17T16:48:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
