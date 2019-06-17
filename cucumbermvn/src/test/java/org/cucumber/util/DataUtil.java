@@ -1,6 +1,7 @@
 package org.cucumber.util;
 
 import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -13,6 +14,8 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 import cucumber.api.DataTable;
 
@@ -68,6 +71,32 @@ public class DataUtil {
 		{
 			e.printStackTrace();
 		}
+		return null;
+	}
+	/*
+	 *This function is used to read the data from a json file based on provided scenario name and returns the data in map format
+	 *Parameters: scenario name 
+	 */
+	@SuppressWarnings("unchecked")
+	public static Map<String, String> readTestDataFromJson(String tcName){
+		try{
+			JSONObject employeeList = (JSONObject) new JSONParser().parse(new FileReader(Global.jsonTestDataFile));
+			return (Map<String, String>) employeeList.get(tcName);
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	/*
+	 *This function is used to make a choice between json and excel
+	 *Parameters: testdata file format 
+	 */
+	public static Map<String, String> readTestData(String tcName){
+		if(Global.testDataChoice.equalsIgnoreCase("json"))
+			return readTestDataFromJson(tcName);
+		else if(Global.testDataChoice.equalsIgnoreCase("excel"))
+			return readTestDataFromExcel(tcName);
 		return null;
 	}
 }
